@@ -1,0 +1,57 @@
+<!-- tarannom azimi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2806c18863.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/indexStyle.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- general calculator box -->
+    <div id="main">
+      <!-- display box and caculation result -->
+      <div class="resultContainer">
+        <p id="numberOne"></p>
+        <p id="numberTwo"></p>
+        <h2 id="resultText"></h2>
+      </div>
+
+      <!-- number buttons box and operators -->
+      <div class="buttonsContainer">
+        <div class="buttons1" onclick="clearAll()">AC</div>
+        <div class="buttons" onclick="removeDigit()">C</div>
+        <div class="buttons" onclick="operator('divide')">/</div>
+        <div class="buttons" onclick="AddDigit('7')">7</div>
+        <div class="buttons" onclick="AddDigit('8')">8</div>
+        <div class="buttons" onclick="AddDigit('9')">9</div>
+        <div class="buttons" onclick="operator('times')">*</div>
+        <div class="buttons" onclick="AddDigit('4')">4</div>
+        <div class="buttons" onclick="AddDigit('5')">5</div>
+        <div class="buttons" onclick="AddDigit('6')">6</div>
+        <div class="buttons" onclick="operator('sub')">-</div>
+        <div class="buttons" onclick="AddDigit('1')">1</div>
+        <div class="buttons" onclick="AddDigit('2')">2</div>
+        <div class="buttons" onclick="AddDigit('3')">3</div>
+        <div class="buttons" onclick="operator('sum')">+</div>
+        <div class="buttons" onclick="changeSign()">-/+</div>
+        <div class="buttons" onclick="Desimal()">.</div>
+        <div class="buttons" onclick="AddDigit('0')">0</div>
+        <div class="buttons" onclick="answer()">=</div>
+        <!-- show history buttons -->
+        <div id="btnHistory" class="buttons2">history</div>
+        <div class="history">
+          <!-- close history buttons -->
+          <button id="HideBtn"><i class="fa fa-close"></i></button>
+          <ul id="calculationsHistory"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>

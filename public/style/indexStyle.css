@@ -1,0 +1,119 @@
+/* tarannom azimi */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    padding-top:50px;
+    background-color: rgb(240, 240, 240);
+}
+/*styling the general calculator box*/
+#main{
+    width:300px;
+    height: 500px;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:5px 5px 10px 1px rgb(168, 168, 168);
+    margin:auto;
+    background-color: #fff;
+    position: relative;
+}
+/*styling the display box and caculation result*/
+.resultContainer{
+    width:97%;
+    height:90px;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:inset 2px 2px 5px 1px rgb(168, 168, 168);  
+}
+/*styling the numbers box*/
+.resultContainer p{
+    color:rgb(160, 158, 158);
+}
+/*styling the number buttons box and operators*/
+.buttonsContainer{
+    cursor: pointer;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-weight: bold;
+    font-size:23px;
+    color: rgb(108, 109, 109);
+}
+/*styling the buttons*/
+.buttonsContainer .buttons,.buttons1,.buttons2{
+     width:48px;
+     height:48px;
+     border-radius: 50%;
+     text-align: center;
+     padding-top:7px;
+     margin:6px;
+    box-shadow:2px 2px 5px 1px rgb(168, 168, 168);    
+}
+/*styling the CA button*/
+.buttons1{
+    width:110px;
+    border-radius:25px;
+    color:rgb(224, 73, 179) 
+}
+/*styling the history button*/
+.buttons2{
+    width:245px;
+    border-radius:25px;
+    background-image: linear-gradient(180deg,rgb(208, 65, 221),rgb(250, 154, 210)); 
+}
+/*styling the hover for buttons*/
+.buttons:hover,.buttons1:hover,.buttons2:hover{
+    border:2px solid rgb(238, 238, 238) ;   
+}
+/*styling the history page*/
+.history{
+    width:272px;
+    height: 405px;
+    background-color: rgb(230, 212, 229);
+    border-radius: 15px;
+    position: absolute;
+    top:9px;
+    left:10px;
+    visibility: hidden;
+    cursor: auto;
+    
+}
+/*show history when history button clicked*/
+.history1{
+    visibility: visible;
+}
+ 
+/*styling close button on the history page*/
+.history button{
+ width: 30px;
+ height: 30px;
+ background-color: rgb(184, 87, 160);
+ border-radius: 50%;
+ border:none;
+ margin:5px;
+ color:#fff;
+ font-weight: bold;
+ cursor: pointer;
+}
+/*styling the hover for close button*/
+.history button:hover{
+    border:2px solid pink;
+}
+/*styling the unordered list for histories*/
+.history ul{
+    list-style:square;
+    margin:30px;
+}
+
+.history ul li{
+    cursor: pointer;
+    font-size: 20px;
+}
+.history ul li:hover{
+    color:blueviolet;}
+
+ 
